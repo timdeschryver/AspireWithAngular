@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>date</th>
+      <th>temperatureC</th>
+      <th>temperatureF</th>
+      <th>summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (forecast of (weatherforecast$ | async); track $index) {
+
+    <tr>
+      <td>{{ forecast.date | date }}</td>
+      <td>{{ forecast.temperatureC }}</td>
+      <td>{{ forecast.temperatureF }}</td>
+      <td>{{ forecast.summary }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
