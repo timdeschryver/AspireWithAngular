@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WeatherForecastAPI\WeatherForecastAPI.csproj" />
+    <ProjectReference
+      Include="..\AngularAspire.WeatherForecastAPI\AngularAspire.WeatherForecastAPI.csproj" />
   </ItemGroup>
 
 </Project>

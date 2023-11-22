@@ -1,9 +1,9 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var weatherforecastApi = builder.AddProject<Projects.WeatherForecastAPI>("weatherforecastapi");
+var weatherforecastApi = builder.AddProject<Projects.AngularAspire_WeatherForecastAPI>("weatherforecastapi");
 
 builder
-    .AddNpmApp("Angular", "../AngularAspire")
+    .AddNpmApp("AngularFrontEnd", "../AngularAspire.AngularFrontEnd")
     .WithReference(weatherforecastApi)
     .WithServiceBinding(scheme: "http", hostPort: 4200);
 
