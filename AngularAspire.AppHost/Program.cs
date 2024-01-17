@@ -5,6 +5,6 @@ var weatherforecastApi = builder.AddProject<Projects.AngularAspire_WeatherForeca
 builder
     .AddNpmApp("AngularFrontEnd", "../AngularAspire.AngularFrontEnd")
     .WithReference(weatherforecastApi)
-    .WithServiceBinding(scheme: "http", hostPort: 4200);
+    .WithServiceBinding(hostPort: 4200, scheme: "http", env: "PORT");
 
 builder.Build().Run();
